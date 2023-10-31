@@ -1,2 +1,2 @@
 # javaScriptpractice
-<img src="./cover.png" width="128"/>
+<img src="https://github.com/abdulmoghni007/javaScriptpractice/blob/main/Cover.png" width="128"/>
