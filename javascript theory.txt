@@ -1,0 +1,290 @@
+Q.What is javascript?
+
+Ans:- It is the browser-side language but nowadays it is used on both  server side and the client side too.
+This has various frameworks and libraries to design the sites.
+
+Q. How we can change the html content?
+
+Ans:- We can use the getElementById() to get the element from the form and all from the front end to the backend of the program. 
+
+
+Example:-document.getElementById("demo").innerHTML = "Hello JavaScript";
+
+
+Q.Can we change the attribute value of the html code?
+
+Ans:- Yes, can do that withe the source of the img for the better under standing we can refer the below code.
+
+
+Example:-
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+
+
+
+
+
+Q.Can we change the Css properties of the code by using the javascript?
+
+Answer:-  by using the document.getElementById("demo").style.fontSize="35px";
+
+
+Example:-
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+</body>
+</html> 
+
+
+
+
+
+Q. Can we hide the Html content by using the JavaScript?
+
+Answer:- Yes we can do that also by using style display properties of the CSS and after that change that to the  block as shown in the below:-
+
+document.getElementById("demo").style.display="none";
+
+
+Example:- 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:block">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+</body>
+</html> 
+
+
+Q.  How we can the JavaScript code?
+
+Answer:- In HTML itself we can add the javascript code by using the <script> </script>
+tag inside the HTML file.
+
+Example:- 
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+
+
+Q. What is the difference between the javascript function and the javascript events?
+
+Answer:- JavaScript is a function which is working on the javascript code when it calls for, but the event is nothing it is the function used for the set of callback functions that have triggers to work and it is interchangeable.
+
+Q. Where you can place javascript?
+
+Answer:- You can write it anywhere you want inside or inside the body. You can also Can in the external file but you have to link your file to the main html file. and you have to save the javascript file with the extension with the ".js" file extension.
+
+
+link js to the main html file  code:- <script src="myScript.js"></script>
+
+
+Q. External JavaScript Advantages?
+
+Answer:- There are several advantages of writing HTML code such as:-
+1. It separates the HTML code and the JavaScript file.
+2. It makes it easier for another developer to readable and maintainable for the other developer too.
+3. It speeds up the web content load-up time.
+
+
+Q. How many ways do you display the output of the javascript?
+
+Answer:-1. Write into the html element using the innerHTML.
+2. Display in the HTML document by using the document.write().
+3. display using the alert button which creates an alert box window.alert().
+4. Display in the browser console using console.log().
+
+
+
+Q. Different keywords and their usage?
+
+Answer:-
+
+keywords ==>> Description
+
+1. var ==>> Declare a variable global.
+
+2. let ==>> Declare a variable under the block suppose we have the function and we need the    	    variable which usage under that only in that case we used that let.
+
+3. const ==>> Declare under block only with a fixed value that does not change.
+
+4. if ==>> It is a conditional statement that usage the make the condition if the condition 	   is true then it will be executed .
+
+5. Switch ==>> Marks a block of a statement if this is not true what will the the next     	       solution?
+
+6. for ==>> it is repeated whenever the condition true and it will also incremented the     	    condition.
+
+7. function ==>> It is used to declare the function with an example of function function-name 		().
+
+8. return ==>> It defines what a function should return off after that it will be terminated.
+
+9. try ==>> It is used on the statement that has a chance of an error  if the statement get 	    wrong then it will generate an error it has separate block for that which is     	    also known as the try block..
+
+
+Q. What are literals?
+
+Answer:- Fixed values are called literals.
+
+For example:-
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 10.50;
+</script>
+
+</body>
+</html>
+
+
+Q. What are string & how it is initialized?
+
+Answer:- Strings are arrays of characters that contain all types of data it, 	 	 	 Talking about the initialization of the string it is denoted with the single quote 	 and the double quote too.
+
+
+Example:-
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 'John Doe';
+</script>
+
+</body>
+</html>
+
+
+Q. What are the javascript variables?
+
+Answer:- these are the container of the value there are three types keywords that assign   	 which is var, let, const.
+
+
+Example:-
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable.
+Then, x is assigned the value of 6:</p>
+
+<p id="demo"></p>
+
+<script>
+let x;
+x = 6;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+
+</html>
+
+Q. Difference between let, const, and Var?
+
+Answer:- -var stored in global scope
+	 -let does not stored in global scope
+	 -const does not stored in global
+-  -- - --- - --- - -- -- -- - ---- - --- -- -- - - --- - -- 
+         -var is used in function scope
+	 -let is used in function
+	 -const is used in function
+- -- - --- - --- - -- -- - - - - -- --- --- ---- -- - - -- -- 
+         -var is not used in block scope 
+	 -let is used in block scope
+	 -const is is used in block scope
+--- --- - -- - - - -- - - - - - - - - - -- -  - -- - - ---  --
+         -var is reassign
+         -let is reassign
+         - const is not reassign
+--- - -- -  -- -  - -- - -  -- - -- - - - - - -- -  --  - --  -
+	 -var is redeclaired
+	 -let is not redeclaired
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
